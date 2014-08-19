@@ -1,25 +1,19 @@
-<script src="polymer.js"></script>
+<link rel="import" href="bower_components/polymer/polymer.html">
 
 <polymer-element name="poll-element">
   <template>
   		<style>
   			input[type="radio"]{margin-right: 10px;}
   		</style>
-  		which one is the best browser ?
-  		<form name="poll" action="">
-	     	<input type="radio" name="result" value="firefox" />Firefox<br>
-	     	<input type="radio" name="result" value="chrome" />Chrome<br>
-	     	<input type="radio" name="result" value="safari" />Safari<br>
-	     	<input type="radio" name="result" value="ie" />Internet Explorer<br>
-	     	<button on-click="{{setVote}}">Submit</button> <a href="">result</a>
-	    </form>
+  		  which one is the best browser ? <br />
+	     	<input type="radio" name="result" value="firefox" />Firefox<br />
+	     	<input type="radio" name="result" value="chrome" />Chrome<br />
+	     	<input type="radio" name="result" value="safari" />Safari<br />
+	     	<input type="radio" name="result" value="ie" />Internet Explorer<br />
+	     	<button>Submit</button> <a href="">result</a>
   </template>
   <script>
-    Polymer('poll-element', {
-      setVote: function() {
-        alert('thanks for voting');
-      }
-    });
+    Polymer('poll-element');
   </script>
 </polymer-element>
 
